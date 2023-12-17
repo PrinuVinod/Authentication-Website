@@ -5,9 +5,10 @@ const session = require('express-session');
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const passportLocalMongoose = require('passport-local-mongoose');
-require('dotenv').config();
-
+const port = process.env.PORT;
 const app = express();
+
+require('dotenv').config();
 
 // Connect to MongoDB
 // MONGODB_CONNECT_URI='mongodb+srv://prinuvinod:BlahBlah123@authentication.syjh7e6.mongodb.net/Authentication?retryWrites=true&w=majority'
