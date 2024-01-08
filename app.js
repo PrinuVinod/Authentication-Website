@@ -10,13 +10,6 @@ const app = express();
 
 require('dotenv').config();
 
-// Connect to MongoDB
-// MONGODB_CONNECT_URI='mongodb+srv://prinuvinod:BlahBlah123@authentication.syjh7e6.mongodb.net/Authentication?retryWrites=true&w=majority'
-// mongoose.connect(process.env.MONGODB_CONNECT_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// });
-
 mongoose.connect('mongodb+srv://prinuvinod:BlahBlah123@authentication.syjh7e6.mongodb.net/Authentication?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
